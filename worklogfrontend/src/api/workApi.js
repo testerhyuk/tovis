@@ -1,7 +1,5 @@
 import axios from "axios"
 
-// API SERVER
-// URL과 PORT
 export const API_SERVER_HOST = 'http://129.154.60.182:8080'
 
 const prefix = `${API_SERVER_HOST}/v1`
