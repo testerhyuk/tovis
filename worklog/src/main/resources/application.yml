@@ -1,14 +1,5 @@
 spring:
   application:
     name: tovis-work-log-service
-  datasource:
-    driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://127.0.0.1:3307/${MYSQL_DATABASE}
-    username: ${MYSQL_ROOT_USERNAME}
-    password: ${MYSQL_ROOT_PASSWORD}
-  jpa:
-    database-platform: org.hibernate.dialect.MySQLDialect
-    open-in-view: false
-    show-sql: true
-    hibernate:
-      ddl-auto: none
+  profiles:
+    active: local  # 기본적으로 로컬 환경 사용
