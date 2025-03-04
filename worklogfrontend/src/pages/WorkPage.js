@@ -32,7 +32,7 @@ export default function WorkPage() {
         }
 
         try {
-            const response = await createWorks({
+            await createWorks({
                 workType,
                 worker,
                 quantity: parseInt(quantity, 10)
