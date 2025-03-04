@@ -10,8 +10,8 @@ RUN npm run build
 # 2. Nginx를 사용하여 정적 파일 제공
 FROM nginx:alpine
 
-# Nginx 설정 파일 복사
-COPY ./nginx/default.conf /etc/nginx/conf.d/default.conf
+# 기존 Nginx 설정 파일을 덮어쓰기 (변경된 경로 반영)
+COPY nginx.conf /etc/nginx/nginx.conf
 
 # React 빌드된 파일을 Nginx의 기본 루트 경로로 이동
 COPY --from=build /app/build /usr/share/nginx/html
