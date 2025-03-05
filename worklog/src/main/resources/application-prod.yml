@@ -4,9 +4,15 @@ spring:
     url: ${SPRING_DATASOURCE_URL}
     username: ${SPRING_DATASOURCE_USERNAME}
     password: ${SPRING_DATASOURCE_PASSWORD}
+    hikari:
+      maximum-pool-size: 10
+      connection-timeout: 30000
+      initialization-fail-timeout: 60000
+      minimum-idle: 5
   jpa:
     database-platform: org.hibernate.dialect.MySQLDialect
     open-in-view: false
     show-sql: true
     hibernate:
       ddl-auto: update
+
