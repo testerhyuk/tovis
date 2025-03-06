@@ -1,0 +1,44 @@
+/* 기본 레이아웃 스타일 */
+.layout-container {
+    min-height: 100vh;
+    background-color: #f3f4f6;
+  }
+  
+  /* 로고 섹션 */
+  .layout-header {
+    text-align: center;
+    padding: 24px;
+    background-color: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .layout-header h1 {
+    font-size: 1.875rem;
+    font-weight: bold;
+  }
+  
+  /* 네비게이션 바 */
+  .navbar {
+    background-color: #2563eb;
+    color: white;
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    padding: 12px;
+  }
+  
+  .nav-button {
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .nav-button a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  /* .nav-button:hover {
+    background-color: #1e40af;
+  } */
+  

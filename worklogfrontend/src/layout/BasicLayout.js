@@ -1,23 +1,26 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React from "react";
+import { Link } from "react-router-dom";
+import "./css/BasicLayout.css"; // CSS 파일 추가
 
-export default function BasicLayout({children}) {
+export default function BasicLayout({ children }) {
   return (
-    <div className="min-h-screen bg-gray-100">
+    <div className="layout-container">
       {/* 로고 */}
-      <div className="text-center py-6 bg-white shadow-md">
-        <h1 className="text-3xl font-bold">작업 일지 시스템</h1>
+      <div className="layout-header">
+        <h1>작업 일지 시스템</h1>
       </div>
 
       {/* 네비게이션 바 */}
-      <nav className="bg-blue-600 text-white flex justify-center space-x-8 py-3">
-        <button className="hover:bg-blue-700 px-4 py-2 rounded"><Link to={"/"}>작업 일지</Link></button>
-        <button className="hover:bg-blue-700 px-4 py-2 rounded"><Link to={"/works"}>작업 작성</Link></button>
+      <nav className="navbar">
+      <Link to="/">
+        <button className="nav-button">작업 일지</button>
+      </Link>
+      <Link to="/works">
+        <button className="nav-button">작업 작성</button>
+      </Link>
       </nav>
 
-      <div>
-        {children}
-      </div>
+      <div>{children}</div>
     </div>
-  )
+  );
 }

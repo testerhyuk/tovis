@@ -1,0 +1,35 @@
+/* 작업 등록 폼 스타일 */
+.work-container {
+    max-width: 24rem;
+    margin: 0 auto;
+    padding: 1.5rem;
+    background-color: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  /* 입력 필드 스타일 */
+  .input-field {
+    width: 100%;
+    border: 1px solid #d1d5db;
+    border-radius: 4px;
+    padding: 8px;
+    margin-top: 4px;
+    margin-bottom: 20px;
+  }
+  
+  /* 버튼 스타일 */
+  .submit-button {
+    width: 100%;
+    background-color: #3b82f6;
+    color: white;
+    padding: 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  .submit-button:hover {
+    background-color: #2563eb;
+  }
+  
