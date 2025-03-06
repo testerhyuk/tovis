@@ -13,7 +13,6 @@ export const getAll = async () => {
 export const createWorks = async (req) => {
     try {
         const res = await axios.post(`${prefix}/worklogs`, req)
-        console.log("res = ", res.data)
         return res.data
     } catch (error) {
         console.error("작업 등록 실패 : ", error)
