@@ -9,7 +9,7 @@ RUN npm ci --no-audit --no-fund
 
 # 소스 코드 복사 후 빌드
 COPY . .
-RUN NODE_OPTIONS="--max-old-space-size=256" CI=true npm run build
+RUN NODE_OPTIONS="--max-old-space-size=512" CI=true npm run build
 
 # Step 2: Nginx를 사용하여 정적 파일 제공
 FROM nginx:alpine
